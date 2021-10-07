@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 3.1274
+
+[node name="GroundCastCollisionTarget" type="Area2D"]
+collision_layer = 0
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2( 11, 0 )
+shape = SubResource( 1 )
